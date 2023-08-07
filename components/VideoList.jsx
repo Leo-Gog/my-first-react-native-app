@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import {  Alert, FlatList, StyleSheet } from 'react-native';
+import {  Alert, FlatList } from 'react-native';
 import VideoItem from './VideoItem';
 
 export default function VideoList() {
@@ -8,7 +8,7 @@ export default function VideoList() {
         fetch('https://jsonplaceholder.typicode.com/photos/')
             .then((res) => res.json())
             .then((data) => setData(data))
-            .catch(err => Alert(err))
+            .catch(err => Alert.alert(err))
     },[])
     
     return(
@@ -26,7 +26,3 @@ export default function VideoList() {
         />
     )
 }
-
-const styles = StyleSheet.create({
-    
-});  

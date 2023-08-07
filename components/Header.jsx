@@ -19,13 +19,12 @@ export default function Header() {
     );
 }
 
-
 const styles = StyleSheet.create({
     header: {
         padding: 6,
         flexDirection: 'row',
         flexWrap: 'wrap',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     logo:{
         flex: 1,
@@ -34,13 +33,11 @@ const styles = StyleSheet.create({
         height: 25,
         width: 105,
     },
-    options:{
-        
+    options:{  
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'space-around',
-        marginRight:10
-  
+        marginRight: 10,
     },
     option:{
         height: 25,
@@ -53,6 +50,6 @@ const styles = StyleSheet.create({
         width: 25,
         borderRadius: 15,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     }
   });

@@ -1,4 +1,4 @@
-import {  Image, ScrollView, StyleSheet, Text, View} from 'react-native';
+import { Image, StyleSheet, Text, View} from 'react-native';
 
 export default function VideoItem({videoImg, userImg, title, id}) {
     return(
